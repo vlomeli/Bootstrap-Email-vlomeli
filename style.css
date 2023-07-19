@@ -1,0 +1,66 @@
+
+.code-box {
+    display: inline-flex;
+    justify-content: center;
+    align-content: flex-start;
+    border: 5px red solid;
+    
+    }
+
+body {
+    height: 100vh;
+    background-color: black;
+    }
+
+.navbar {
+    width: calc(100% + 10px);
+
+}
+
+.navbar-container{
+    height: 10%;
+}
+
+.column-all {
+    border: 5px white solid;
+    color: white;
+    }
+
+
+.form-control {
+    margin-top:10px ;
+    margin-bottom: 20px;
+    padding: px;
+}
+
+.btn{
+    color: white;
+    background-color: #2F82FF;
+    border: transparent; 
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 14px;
+    height: 40px;
+}
+
+.btn:hover{
+    background-color: none;
+}
+
+
+h1 {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+    font-weight: bold;
+}
+
+#Compose {
+    color: white;
+    background-color: #2F82FF;
+    border: transparent; 
+    font-weight: bold;
+}

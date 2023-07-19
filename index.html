@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" <title>Bootstrap Email vlomeli</title>
+</head>
+
+<body>
+
+
+  <!--Navbar Code-->
+    <nav class="navbar" style="background-color: black;">
+    <div class="container-fluid d-flex justify-content-center">
+      <form class="d-flex" role="search">
+        <input class="form-control m-3 rounded-3" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success rounded-3" type="submit">Search</button>
+      </form>
+    </div>
+  </nav> 
+
+  
+
+  <!-- Column One Code-->
+  <div class="container-fluid h-100 code-box">
+    <div class="row w-100 h-100">
+      <div class="col-md-3 col-lg-2  d-none d-md-inline  column-one column-all">
+        <h1> Welcome, Victor!</h1>
+        <input type="submit" value="COMPOSE" Id="Compose">
+        <ul class="Menu">
+          <li><a href="#/inbox"></a>Inbox</li>
+          <li><a href="#/favorite"></a> Favorite</li>
+          <li><a href="#/sent"></a>Sent</li>
+          <li><a href="#/drafts"></a>Drafts</li>
+          <li><a href="#/folders"></a>Folders</li>
+          <li><a href="#/lists"></a>Lists</li>
+          <li><a href="#/trash"></a>Trash</li>
+        </ul>
+      </div>
+
+      <!-- Column Two Code-->
+      <div class="col col-md-9 col-lg-4 column-two column-all">
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Indeed</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="New opportunities are waiting!">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Bob Marley</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel"
+              placeholder="Thank you for submitting your resume!">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Bay Valley Tech</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="Welcome to the team!">
+          </div>
+        </div>
+      </div>
+
+      <!--Column three Code -->
+      <div class="col-sm-12 col-lg-6  d-none d-lg-inline  column-all column-three">
+        <div class="mb-3">
+          <input class="form-control" type="text" value="To: vlome@hotmail.com" aria-label="Readonly input example"
+            readonly>
+          <input class="form-control" type="text" value="From: BobMarley240@gmail.com"
+            aria-label="Readonly input example" readonly>
+
+          <div class="mb-3">
+            <input class="form-control" type="text" value="The Bob Marley Shop" aria-label="Readonly input example"
+              readonly>
+            <input class="form-control" type="text" value="Subject: Thank you for submitting your resume!"
+              aria-label="Readonly input example" readonly>
+            <textarea class="form-control received" readonly rows="8"
+              aria-label="Readonly input example">We would like you to know that we have received your resume and will be reviewing it! Please feel free to email us if you have any questions or would like an update on the process.</textarea>
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea class="form-control response" id="exampleFormControlTextarea1" rows="10"></textarea>
+              <button class="btn btn-outline-success" type="submit">Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
