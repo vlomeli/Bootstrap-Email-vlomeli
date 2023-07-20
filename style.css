@@ -3,8 +3,6 @@
     display: inline-flex;
     justify-content: center;
     align-content: flex-start;
-    border: 5px red solid;
-    
     }
 
 body {
@@ -12,26 +10,16 @@ body {
     background-color: black;
     }
 
-.navbar {
-    width: calc(100% + 10px);
-
-}
-
-.navbar-container{
-    height: 10%;
-}
-
 .column-all {
-    border: 5px white solid;
-    color: white;
+    color:white;
     }
-
 
 .form-control {
     margin-top:10px ;
     margin-bottom: 20px;
-    padding: px;
-}
+    color: white;
+    background-color: transparent;
+    }
 
 .btn{
     color: white;
@@ -40,27 +28,34 @@ body {
     border-radius: 10px;
     font-weight: bold;
     font-size: 15px;
-    margin-top: 14px;
+    margin-top: 9px;
     height: 40px;
 }
 
-.btn:hover{
-    background-color: none;
-}
-
-
-h1 {
-    font-size: 20px;
-}
-
-li {
-    list-style: none;
-    font-weight: bold;
-}
-
-#Compose {
+#inboxButton {
+    background-color:black;
     color: white;
+    }
+    
+.btn:hover{
+    background-color: grey;
+    color:white;
+}
+
+.selected-email {
     background-color: #2F82FF;
-    border: transparent; 
+}
+h1 {
+    font-size: 22px;
+    color: white;
     font-weight: bold;
 }
+
+h2 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+
+

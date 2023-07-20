@@ -10,57 +10,78 @@
 </head>
 
 <body>
-
-
-  <!--Navbar Code-->
-    <nav class="navbar" style="background-color: black;">
-    <div class="container-fluid d-flex justify-content-center">
-      <form class="d-flex" role="search">
-        <input class="form-control m-3 rounded-3" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success rounded-3" type="submit">Search</button>
-      </form>
-    </div>
-  </nav> 
-
-  
-
-  <!-- Column One Code-->
-  <div class="container-fluid h-100 code-box">
-    <div class="row w-100 h-100">
-      <div class="col-md-3 col-lg-2  d-none d-md-inline  column-one column-all">
-        <h1> Welcome, Victor!</h1>
-        <input type="submit" value="COMPOSE" Id="Compose">
-        <ul class="Menu">
-          <li><a href="#/inbox"></a>Inbox</li>
-          <li><a href="#/favorite"></a> Favorite</li>
-          <li><a href="#/sent"></a>Sent</li>
-          <li><a href="#/drafts"></a>Drafts</li>
-          <li><a href="#/folders"></a>Folders</li>
-          <li><a href="#/lists"></a>Lists</li>
-          <li><a href="#/trash"></a>Trash</li>
-        </ul>
+    <!--menu button for mobile devices-->
+    <div class="d-block d-md-none d-flex ">
+      <div class="col-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" href="#inboxButton" aria-controls="inboxButton"> &#9776;</button>
       </div>
+      <div class="col-6 d-flex justify-content-center">
+          <h1 id="inbox-title text-center">All Inboxes</h1>
+      </div>
+  </div>
+  
+  <!--hamburger menu-->
+  <div class="offcanvas offcanvas-start d-flex justify-content-start " tabindex="-1" id="inboxButton">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasInboxButton">Mailboxes</h5> 
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-controls="inboxButton"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="btn-group-vertical w-100 gap-4 " role="group">
+            <button type="button" class="btn btn-info btn-block ">Inbox</button>
+            <button type="button" class="btn btn-info btn-block">Favorited</button>
+            <button type="button" class="btn btn-info btn-block">Sent</button>
+            <button type="button" class="btn btn-info btn-block">Drafts</button>
+            <button type="button" class="btn btn-info btn-block">Folders</button>
+            <button type="button" class="btn btn-info btn-block">Lists</button>
+            <button type="button" class="btn btn-info btn-block">Trash</button>
+        </div>
+    </div>
+</div>
+  <!--Title & Search bar-->
+  <div class="text-center heading d-none d-md-block"><h1 id="inbox-title ">Electronic Mail</h1></div>
+  <div class="background">
+      <div class="container-fluid search-container">
+          <div class = "input-group mb-3 ">
+              <input type="text" class="form-control" placeholder="Search" id="search-bar">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">&#128269;</button>
+          </div>
+      </div>
+
+   <!-- Column One Code-->
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-3 col-lg-2 d-none d-md-block inbox-list">
+                  &nbsp
+                  <div class="btn-group-vertical w-100 gap-4"  role="group">
+                      <button type="button" class="btn btn-info btn-light">Compose</button>
+                      <button type="button" class="btn btn-info btn-light ">All Inboxes</button>
+                      <button type="button" class="btn btn-info btn-light">Favorited</button>
+                      <button type="button" class="btn btn-info btn-light">Sent</button>
+                      <button type="button" class="btn btn-info btn-light">Drafts</button>
+                      <button type="button" class="btn btn-info btn-light">Folders</button>
+                      <button type="button" class="btn btn-info btn-light">Lists</button>
+                      <button type="button" class="btn btn-info btn-light">Trash</button>
+                  </div>
+              </div>
+      
 
       <!-- Column Two Code-->
       <div class="col col-md-9 col-lg-4 column-two column-all">
-        <div class="row mb-3">
-          <label for="colFormLabel" class="col-sm-2 col-form-label">Indeed</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="colFormLabel" placeholder="New opportunities are waiting!">
-          </div>
-        </div>
-        <div class="row mb-3">
-          <label for="colFormLabel" class="col-sm-2 col-form-label">Bob Marley</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="colFormLabel"
-              placeholder="Thank you for submitting your resume!">
-          </div>
-        </div>
-        <div class="row mb-3">
-          <label for="colFormLabel" class="col-sm-2 col-form-label">Bay Valley Tech</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="colFormLabel" placeholder="Welcome to the team!">
-          </div>
+        <div class="mb-3">
+          <h2> Indeed: </h2>
+          <input class="form-control" type="text" value="New opportunities are waiting..." aria-label="Readonly input example"
+            readonly>
+           <h2> Bob Marley:</h2>
+          <input class="form-control selected-email" type="text" value="Thank you for submitting your resume!" aria-label="Readonly input example" readonly>
+          <h2> Bay Valley Tech:</h2>
+          <input class="form-control" type="text" value="Welcome to the team!" aria-label="Readonly input example" readonly> 
+          <h2> Best Buy: </h2>
+          <input class="form-control" type="text" value="Don't miss out on these great deals..." aria-label="Readonly input example" readonly> 
+          <h2> Youtube: </h2>
+          <input class="form-control" type="text" value="Unfamiliar login attempt!" aria-label="Readonly input example" readonly> 
+          <h2> Stan State: </h2>
+          <input class="form-control" type="text" value="Warrior day is this friday..." aria-label="Readonly input example" readonly> 
         </div>
       </div>
 
@@ -83,7 +104,7 @@
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label"></label>
               <textarea class="form-control response" id="exampleFormControlTextarea1" rows="10"></textarea>
-              <button class="btn btn-outline-success" type="submit">Reply</button>
+              <button class="btn btn-outline-secondary btn-light" type="submit">Reply</button>
             </div>
           </div>
         </div>
